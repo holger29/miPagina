@@ -29,7 +29,8 @@
             case strpos($usuario, "Android")>0: echo "<p>Sistema Operativo Android.</p>";break;
         }
         /**ver la arquitectura del sistema si es de 64 bits o de 32 bits */
-        if(strpos($usuario, "x64")){ echo "<p>Arquitectura del Sistema: 64 bits</p>";}elseif(strpos($usuario, "x32")){echo "<p>Arquitectura del Sistema: 32 bits</p>";}
+        if(strpos($usuario, "x64")){ echo "<p>Arquitectura del Sistema: 64 bits</p>";}elseif(strpos($usuario, "x32")){
+            echo "<p>Arquitectura del Sistema: 32 bits</p>";}
         /**con switch buscamos que navegador esta usando el usuario */
         switch($usuario){
             case strpos($usuario,"Chrome")==81: echo "<p>Navegador web: Google Chrome</p>";
